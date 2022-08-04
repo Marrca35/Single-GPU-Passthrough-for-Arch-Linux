@@ -304,7 +304,7 @@ Extract NVFlash.
 
 Switch to another TTY console with ***CTRL+ALT+FN+NUM***
 
-Stop your display manager with `$ systemctl stop display-manager.service
+Stop your display manager with `$ sudo systemctl stop display-manager.service`
 
 Unload nvidia drivers with `$ sudo rmmod nvidia nvidia_drm nvidia_modeset nvidia_uvm`
 
@@ -316,7 +316,7 @@ Run NVFlash `$ sudo ./nvflash --save /path/to/save/vbios/bios.rom`
 
 Load nvidia drivers with `$ sudo modprobe nvidia nvidia_drm nvidia_modeset nvidia_uvm`
 
-Start your display manager with `$ systemctl start display-manager.service`
+Start your display manager with `$ sudo systemctl start display-manager.service`
 
 ### Patching VBIOS
 
