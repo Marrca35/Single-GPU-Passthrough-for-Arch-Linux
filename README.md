@@ -308,7 +308,7 @@ Stop your display manager with `$ sudo systemctl stop display-manager.service`
 
 Unload nvidia drivers with `$ sudo rmmod nvidia nvidia_drm nvidia_modeset nvidia_uvm`
 
-CD to the x64 directory of NVFlash `$ cd //path/to/nvflash/x64`
+CD to the x64 directory of NVFlash `$ cd /path/to/nvflash/x64`
 
 Make NVFlash executable with `$ sudo chmod +x nvflash`
 
