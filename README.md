@@ -149,7 +149,7 @@ $ sudo wget 'https://raw.githubusercontent.com/PassthroughPOST/VFIO-Tools/master
 Create required folders:
 
 ```
-sudo mkdir /etc/libvirt/hooks/qemu.d /etc/libvirt/hooks/qemu.d/win10 /etc/libvirt/hooks/qemu.d/win10/prepare /etc/libvirt/hooks/qemu.d/win10/prepare/begin /etc/libvirt/hooks/qemu.d/win10/release /etc/libvirt/hooks/qemu.d/win10/release/end
+sudo mkdir /etc/libvirt/hooks /etc/libvirt/hooks/qemu.d /etc/libvirt/hooks/qemu.d/win10 /etc/libvirt/hooks/qemu.d/win10/prepare /etc/libvirt/hooks/qemu.d/win10/prepare/begin /etc/libvirt/hooks/qemu.d/win10/release /etc/libvirt/hooks/qemu.d/win10/release/end
 ```
 
 Ensure that your folder/file tree are correct:
