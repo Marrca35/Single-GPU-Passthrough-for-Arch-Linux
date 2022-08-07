@@ -109,10 +109,6 @@ Enable libvirtd `sudo systemctl enable libvirtd`
 
 You should `reboot` your system now.
 
-Start the virsh network `virsh net-start default`
-
-Set the virsh network to autostart `virsh net-autostart default`
-
 Check/list IOMMU groupings:
 
 ```
