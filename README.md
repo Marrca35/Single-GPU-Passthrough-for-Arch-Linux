@@ -172,18 +172,20 @@ If your groups are not neatly divided you can use the ACS patch, although this c
 
 We will begin preparation by creating the hooks and associated scripts.
 
+Create the hooks directory `$ sudo mkdir /etc/libvirt/hooks`
+
 Get the hook helper with:
 
 ```
 $ sudo wget 'https://raw.githubusercontent.com/PassthroughPOST/VFIO-Tools/master/libvirt_hooks/qemu' -O /etc/libvirt/hooks/qemu
 ```
 
-Make the Qemu folder executable `$ sudo chmod +x /etc/libvirt/hooks/qemu`
+Make the qemu file executable `$ sudo chmod +x /etc/libvirt/hooks/qemu`
 
 Create required folders:
 
 ```
-$ sudo mkdir /etc/libvirt/hooks /etc/libvirt/hooks/qemu.d /etc/libvirt/hooks/qemu.d/win10 /etc/libvirt/hooks/qemu.d/win10/prepare /etc/libvirt/hooks/qemu.d/win10/prepare/begin /etc/libvirt/hooks/qemu.d/win10/release /etc/libvirt/hooks/qemu.d/win10/release/end
+$ sudo mkdir /etc/libvirt/hooks/qemu.d /etc/libvirt/hooks/qemu.d/win10 /etc/libvirt/hooks/qemu.d/win10/prepare /etc/libvirt/hooks/qemu.d/win10/prepare/begin /etc/libvirt/hooks/qemu.d/win10/release /etc/libvirt/hooks/qemu.d/win10/release/end
 ```
 
 Ensure that your folder/file tree are correct:
