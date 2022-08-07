@@ -236,7 +236,7 @@ modprobe vfio_iommu_type1
 modprobe vfio_pci
 ```
 
-Convert `start.sh` to executable using `$ sudo nano /etc/libvirt/hooks/qemu.d/win10/prepare/begin/start.sh`
+Convert `start.sh` to executable using `$ sudo chmod +x /etc/libvirt/hooks/qemu.d/win10/prepare/begin/start.sh`
 
 Press ***CTRL+O*** to save the file
 
