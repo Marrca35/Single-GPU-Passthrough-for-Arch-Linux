@@ -62,6 +62,32 @@ File
 └──Save Changes and Exit
 ```
 
+### Enable IOMMU in Bootloader
+
+#### GRUB
+
+Open `/etc/default/grub` `$ sudo nano /etc/default/grub`
+
+Find the line `GRUB_CMDLINE_LINUX_DEFAULT="..."`
+
+Add `"... intell_iommu=on"`
+
+Press ***CTRL+O*** to save and exit.
+
+You should `reboot` your system now.
+
+#### Systemd-Boot
+
+Open `/boot/loaders/entries/arch.conf` `$ sudo nano /boot/loaders/entries/arch.conf`
+
+Find the line `options ...`
+
+Add `... intel_iommu=on`
+
+Press ***CTRL+O*** to save and exit.
+
+You should `reboot` your system now.
+
 ### Check & Prepare your OS
 
 Check for IOMMU support `$ sudo dmesg | grep IOMMU`
