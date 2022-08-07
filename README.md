@@ -103,9 +103,15 @@ You should get an output similar to this:
 [    0.325372] AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
 ```
 
-Install all required packages: <br />`$ sudo pacman -S qemu libvirt edk2-ovmf virt-manager dnsmasq`
+Install all required packages: <br />`$ sudo pacman -S qemu libvirt edk2-ovmf virt-manager dnsmasq iptables-nft`
+
+Enable libvirtd `sudo systemctl enable libvirtd` 
 
 You should `reboot` your system now.
+
+Start the virsh network `virsh net-start default`
+
+Set the virsh network to autostart `virsh net-autostart default`
 
 Check/list IOMMU groupings:
 
