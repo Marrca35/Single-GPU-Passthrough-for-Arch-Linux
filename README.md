@@ -70,7 +70,7 @@ Open `/etc/default/grub` `$ sudo nano /etc/default/grub`
 
 Find the line `GRUB_CMDLINE_LINUX_DEFAULT="..."`
 
-Add `"... intell_iommu=on"`
+Add `"... intel_iommu=on"`
 
 Press ***CTRL+O*** to save and exit.
 
