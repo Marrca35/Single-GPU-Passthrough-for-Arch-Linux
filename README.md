@@ -259,7 +259,7 @@ nvidia-xconfig --query-gpu-info > /dev/null 2>&1
 echo "efi-framebuffer.0" > /sys/bus/platform/drivers/efi-framebuffer/bind
 
 modprobe nvidia_drm
-modprobe nvidia_modesetChange firmware to `OVMF_CODE`
+modprobe nvidia_modeset
 
 modprobe nvidia_uvm
 modprobe nvidia
