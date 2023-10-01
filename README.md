@@ -80,6 +80,8 @@ You should `reboot` your system now.
 
 Open `/boot/loaders/entries/arch.conf` `$ sudo nano /boot/loaders/entries/arch.conf`
 
+`Note: some users may have /boot/loader/entries instead of /boot/loaders/entries`
+
 Find the line `options ...`
 
 Add `... intel_iommu=on`
